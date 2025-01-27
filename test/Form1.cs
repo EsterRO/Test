@@ -21,5 +21,10 @@ namespace test
         {
 
         }
+
+        private void result_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

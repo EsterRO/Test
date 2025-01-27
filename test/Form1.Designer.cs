@@ -37,31 +37,40 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(60, 123);
+            this.textBox1.Location = new System.Drawing.Point(80, 151);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(122, 20);
+            this.textBox1.Size = new System.Drawing.Size(161, 22);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(333, 123);
+            this.textBox2.Location = new System.Drawing.Point(444, 151);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(115, 20);
+            this.textBox2.Size = new System.Drawing.Size(152, 22);
             this.textBox2.TabIndex = 2;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(197, 123);
+            this.comboBox1.Location = new System.Drawing.Point(263, 151);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
-            // 
+            this.comboBox1.Size = new System.Drawing.Size(160, 24);
+           this. comboBox1.DisplayMember = "Text";
+           this. comboBox1.ValueMember = "Value";
+           // this.comboBox1.Items.Add(new { text = "Mathematical Connection", value =1});//תגילי חיבור
+           // this.comboBox1.Items.Add(new { text = "Mathematical Subtraction", value = 2 });//תרגילי חיסור
+           //this.comboBox1.Items.Add(new { text = "Mathematical Division", value = 3 });//תרגילי חילוק
+           //this.comboBox1.Items.Add(new { text = "Mathematical multiplication", value = 4 });//תרגילי כפל
+           // // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(481, 120);
+            this.button1.Location = new System.Drawing.Point(641, 148);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 23);
+            this.button1.Size = new System.Drawing.Size(161, 28);
             this.button1.TabIndex = 5;
             this.button1.Text = "CALCULATE";
             this.button1.UseVisualStyleBackColor = true;
@@ -69,22 +78,25 @@
             // result
             // 
             this.result.Enabled = false;
-            this.result.Location = new System.Drawing.Point(60, 224);
+            this.result.Location = new System.Drawing.Point(80, 276);
+            this.result.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(480, 20);
+            this.result.Size = new System.Drawing.Size(639, 22);
             this.result.TabIndex = 6;
             this.result.Text = "result";
+            this.result.TextChanged += new System.EventHandler(this.result_TextChanged);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.result);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "TestEsther";
             this.ResumeLayout(false);
