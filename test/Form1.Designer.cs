@@ -60,11 +60,11 @@
             this.comboBox1.Size = new System.Drawing.Size(160, 24);
            this. comboBox1.DisplayMember = "Text";
            this. comboBox1.ValueMember = "Value";
-           // this.comboBox1.Items.Add(new { text = "Mathematical Connection", value =1});//תגילי חיבור
+            this.comboBox1.Items.Add(new { text = "Mathematical Connection", value = "1" });//תגילי חיבור
            // this.comboBox1.Items.Add(new { text = "Mathematical Subtraction", value = 2 });//תרגילי חיסור
-           //this.comboBox1.Items.Add(new { text = "Mathematical Division", value = 3 });//תרגילי חילוק
-           //this.comboBox1.Items.Add(new { text = "Mathematical multiplication", value = 4 });//תרגילי כפל
-           // // 
+           // this.comboBox1.Items.Add(new { text = "Mathematical Division", value = 3 });//תרגילי חילוק
+           // this.comboBox1.Items.Add(new { text = "Mathematical multiplication", value = 4 });//תרגילי כפל
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(641, 148);
